@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "experiencebank",
+	"version": "${version}",
+	"name": "Experience Bank",
+	"description": "Adds a bank that allows you to invest experience in and gain interest",
+	"authors": [
+		"Nijigen"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/experiencebank/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nijigen.ExperienceBank"
+		],
+		"client": [
+			"net.nijigen.ExperienceBankClient"
+		],
+		"fabric-datagen": [
+			"net.nijigen.ExperienceBankDataGenerator"
+		]
+	},
+	"mixins": [
+		"experiencebank.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
