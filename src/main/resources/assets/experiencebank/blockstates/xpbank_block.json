@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "experiencebank:block/xpbank_block" }
+  }
+}
